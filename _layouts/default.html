@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ title }}</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
   </head>
   <body>
     <section id="navbar">
-      <h1 class="logo">Octave | Web Design London</h1>
+      <h1 class="logo"><a href="/">Octave | Web Design London</a></h1>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
           <li class="getintouch"><a href="/contact">Get in touch</a></li>
         </ul>
       </nav>
