@@ -6,20 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:200,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <script src="/js/main.js"></script>
   </head>
   <body>
-    <section id="navbar">
-      <h1 class="logo"><a href="/">Octave | Web Design London</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Work</a></li>
-          <li class="getintouch"><a href="/contact">Get in touch</a></li>
-        </ul>
-      </nav>
-    </section>
+    {% include header.html %}
     {{ content }}
   </body>
 </html>

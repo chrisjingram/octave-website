@@ -1,0 +1,19 @@
+---
+---
+
+@import "normalize.css";
+
+html,body{
+  height: 100%;
+}
+body{
+  font-size: 10px;
+}
+
+section#intro{
+  background: #18191E;
+  height: 100%;
+}
+
+@import "header";
+
