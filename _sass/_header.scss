@@ -1,17 +1,54 @@
-section#navbar{
+header{
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  .phone-number-mobile{
+    text-align: center;
+    a{
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-family: "Muli", sans-serif;
+      font-weight: 700;
+      span{
+        font-size: 1.2rem;
+        vertical-align: top;
+      }
+      i{
+        font-size: 1.2rem;
+        vertical-align:top;
+      }
+    }
+  }
+}
+section#navbar{
   box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 5rem;
+  z-index: 100;
+  justify-content: center;
+  position: relative;
+  @include md{
+    justify-content: flex-start;
+  }
+  &.hidden{
+    position: fixed !important;
+    top: -7rem !important;
+  }
+  &.fixed{
+    top: 0 !important;
+    transition: top 0.2s !important;
+  }
   h1.logo{
-    margin: 0;
-    margin-left: 2rem;
+    margin: -0.35rem 0 0 0;
     width: 7rem;
+    @include md{
+      margin-left: 2rem;
+    }
     a{
       background: url(/assets/images/octave-white.svg) center center no-repeat;
       background-size: 100%;
@@ -20,9 +57,31 @@ section#navbar{
       font-size: 2rem;
     }
   }
+  .hamburger-button{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    @include md{
+      position: relative;
+      top: 0;
+      right: 0;
+      display: none;
+    }
+  }
   nav{
     flex: 1;
     height: 100%;
+    display: none;
+    @include md{
+      display: block;
+    }
     ul{
       height: 100%;
       margin: 0;

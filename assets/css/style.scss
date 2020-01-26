@@ -2,12 +2,13 @@
 ---
 
 @import "normalize.css";
+@import "vars";
 
 html,body{
   height: 100%;
 }
 body{
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 @import "header";
