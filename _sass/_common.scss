@@ -1,0 +1,15 @@
+.button{
+  border: 0.25rem solid white;
+  padding: 1rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  i{
+    margin-left: 0.3rem;
+  }
+}

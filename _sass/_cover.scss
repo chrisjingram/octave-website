@@ -1,5 +1,13 @@
 section#cover{
   background: $indigo;
   height: 100%;
-  padding-top: 5rem;
+  padding: 5rem 2rem;
+  text-align: center;
+  h2.strapline{
+    font-family: "Muli", sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 }
