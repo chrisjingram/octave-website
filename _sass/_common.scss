@@ -1,15 +1,27 @@
 .button{
-  border: 0.25rem solid white;
+  border: 0.25rem solid black;
   padding: 1rem 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 700;
   font-family: "Muli", sans-serif;
   font-size: 1rem;
+}
+.button.button-white{
+  border-color: white;
+  color: white;
+}
+.button.icon-right{
   i{
     margin-left: 0.3rem;
   }
+}
+
+h2{
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: black;
 }
