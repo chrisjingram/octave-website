@@ -5,6 +5,7 @@ section#intro{
     margin: 0 0 1rem;
     @include lg{
       font-size: 2.5rem;
+      margin: 0 0 1.5rem;
     }
   }
   p{
@@ -13,6 +14,7 @@ section#intro{
     color: $grey;
     @include lg{
       font-size: 1.5rem;
+      margin: 0 0 2rem;
     }
   }
 }
