@@ -1,0 +1,33 @@
+section#footer{
+  padding: 2rem;
+  background: $indigo;
+  @include md{
+    padding: 1rem 2rem;
+    display: flex;
+  }
+  @include lg{
+    padding: 2rem 4rem;
+  }
+  .copyright{
+    font-size: 0.75rem;
+    color: #eee;
+    margin: 0;
+    @include md{
+      text-align: right;
+      flex: 1;
+    }
+  }
+  .footer-nav{
+    margin-bottom: 0.75rem;
+    @include md{
+      flex: 1;
+      margin-bottom: 0;
+    }
+    a{
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      margin-right: 0.75rem;
+    }
+  }
+}
