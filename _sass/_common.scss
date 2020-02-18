@@ -20,9 +20,32 @@
     margin-left: 0.3rem;
   }
 }
+.button.icon-left{
+  padding-right: 2rem;
+  i{
+    margin-right: 0.3rem;
+  }
+}
+
 
 h2{
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   color: black;
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  @include lg{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+  }
+}
+p{
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin: 0 0 1.5rem;
+  color: $grey;
+  @include lg{
+    font-size: 1.5rem;
+    margin: 0 0 2rem;
+  }
 }
