@@ -28,10 +28,13 @@ section#cover{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    @include md{
+      margin-top: 4rem;
+    }
     img{
       position: absolute;
       width: 100%;
-      max-width: 50em;
+      max-width: 60em;
       -webkit-transition: opacity 1s ease-in-out;
       -moz-transition: opacity 1s ease-in-out;
       -o-transition: opacity 1s ease-in-out;
@@ -40,6 +43,9 @@ section#cover{
     }
     img.visible{
       opacity: 1;
+    }
+    img#hacw{
+      margin-top: 5rem;
     }
 
   }
