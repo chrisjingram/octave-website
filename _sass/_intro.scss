@@ -4,6 +4,7 @@ section#intro{
     @include lg{
       max-width: 1000px;
     }
+    margin: 0;
   }
   @include lg{
     padding: 4rem;
