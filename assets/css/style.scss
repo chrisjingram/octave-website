@@ -13,6 +13,13 @@ body{
   line-height: 1.3;
 }
 
+::selection {
+  background: $green; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $green; /* Gecko Browsers */
+}
+
 @import "common";
 @import "header";
 @import "cover";
