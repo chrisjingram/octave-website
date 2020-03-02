@@ -32,3 +32,38 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 });
 
+$(document).ready(function(){
+
+  // Scroll on # links
+  $("a[href^=#]").click(function(e) {
+    e.preventDefault();
+    var dest = $(this).attr('href');
+    $('html,body')
+      .animate({
+          scrollTop: $(dest).offset().top - 80
+        },
+        'slow'
+      );
+  });
+
+  // Header animation on scroll
+  $(window).scroll(function(){
+    if($(window).scrollTop() === 0){
+      $("#navbar").removeClass("fixed");
+      $("#navbar").removeClass("hidden");
+    }
+  });
+
+  $(window).scroll(_.debounce(function(){
+    if($(window).scrollTop() >= $(window).height()) {
+      $("#navbar").addClass("hidden");
+      setTimeout(function(){
+        $("#navbar").addClass("fixed");
+      }, 200)
+    } else {
+      $("#navbar").removeClass("fixed");
+      $("#navbar").removeClass("hidden");
+    }
+  }, 50));
+});
+

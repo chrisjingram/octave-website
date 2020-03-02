@@ -4,6 +4,9 @@
 @import "normalize.css";
 @import "vars";
 
+html{
+  background-color: $indigo;
+}
 html,body{
   height: 100%;
 }

@@ -1,5 +1,6 @@
 section#intro{
   padding: 2rem;
+  background: white;
   p{
     @include lg{
       max-width: 1000px;
