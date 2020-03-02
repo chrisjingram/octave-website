@@ -1,17 +1,26 @@
 .button{
-  border: 0.25rem solid black;
+  border: 0.25rem solid $indigo;
   padding: 1rem 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: black;
+  color: $indigo;
   font-weight: 700;
   font-family: "Muli", sans-serif;
   font-size: 1rem;
+  transition: 0.25s;
 }
 .button.button-white{
   border-color: white;
+  color: white;
+}
+.button.button-white:hover{
+  background-color: white;
+  color: $indigo;
+}
+.button:hover{
+  background: $indigo;
   color: white;
 }
 .button.icon-right{
