@@ -5,9 +5,15 @@ section#cover{
   padding: 5rem 2rem;
   text-align: center;
   overflow:hidden;
+  .scroll-for-more{
+    display: none;
+    @include md{
+      display: inline-flex;
+    }
+  }
   h2.strapline{
     font-family: "Muli", sans-serif;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: white;
     text-align: center;
     width: 100%;
@@ -45,7 +51,10 @@ section#cover{
       opacity: 1;
     }
     img#hacw{
-      margin-top: 5rem;
+      margin-top: 1.5rem;
+      @include md{
+        margin-top: 5rem;
+      }
     }
 
   }
