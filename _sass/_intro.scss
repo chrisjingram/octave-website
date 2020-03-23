@@ -5,6 +5,8 @@ section#intro{
     @include lg{
       max-width: 1000px;
     }
+  }
+  p:last-child{
     margin: 0;
   }
   @include lg{
