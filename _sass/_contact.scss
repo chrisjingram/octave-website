@@ -1,6 +1,9 @@
 section#contact{
   padding: 2rem;
   background: white;
+  h2{
+    margin: 0 0 0.5rem;
+  }
   @include lg{
     padding: 4rem;
   }
