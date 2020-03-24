@@ -59,3 +59,13 @@ section#cover{
 
   }
 }
+
+section#cover.websites{
+  .scroll-for-more{
+    display: inline-flex;
+  }
+  .gallery img{
+    max-width: 100em;
+  }
+
+}
